@@ -1,6 +1,3 @@
-*{
-    border: 0.5px solid salmon;
-}
 
 
 header {
@@ -9,12 +6,20 @@ header {
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
-    border: 1px solid black;
 }
 header a{
     text-decoration: none;
 }
-
+header nav a{ 
+padding: 10px;
+}
+ul{
+    list-style: none;
+}
+.basrol, .tur, .director {
+    color: orangered;
+    font-weight: bold;
+}
 
 main {
     border: 1px solid black;
@@ -23,7 +28,6 @@ main {
 }
 footer{
     display: flex;
-    
 
 }
 footer a{
@@ -35,9 +39,16 @@ footer a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     padding: 10px;
     margin: 10px;
+}
+.film1, .film2, .film3{
+    align-items: b;
+    width: 14rem;
+    height: 10em;
+    border: 1px solid gray;
+    padding: 10px;
+    
 }
 
 .recommended {
@@ -45,10 +56,10 @@ footer a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     padding: 10px;
-    margin: 10px 10px 20% 10px;
-
+}
+.gizli {
+    visibility: hidden;
 }
 
 
@@ -67,14 +78,30 @@ footer a{
 .play-btn { 
     display: flex;
     flex-direction: row;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
     background-color: red;
     color: white;
+    font-size: 1.1rem;
+    border: none;
 }
 .play-btn1 { 
     display: flex;
     flex-direction: row;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
     background-color: red;
     color: white;
+    font-size: 1.1rem;
+    border: none;
 }
 .maturity-rating {
     border: 1px solid gray;
@@ -82,3 +109,22 @@ footer a{
     font-size: 70%;
 }
 
+.follow {
+    display: flex;
+    flex-direction: row;
+}
+.follow img { 
+width: 10%;
+height: 10%;
+}
+.apps {
+    display: flex;
+    flex-direction: row;
+}
+.apps img { 
+margin-top: 5%;
+justify-content: center;
+align-items: center;
+width: 25%;
+height: 25%;
+}
