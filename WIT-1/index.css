@@ -1,5 +1,4 @@
 
-
 header {
     display: flex;
     align-items: center;
@@ -7,12 +6,15 @@ header {
     padding: 10px;
     margin: 10px;
 }
-header a{
+.logo {
+    width: 200px;
+}
+
+a {
+    color: black;
     text-decoration: none;
 }
-header nav a{ 
-padding: 10px;
-}
+
 ul{
     list-style: none;
 }
@@ -26,13 +28,7 @@ main {
     padding: 10px;
     margin: 10px;
 }
-footer{
-    display: flex;
 
-}
-footer a{
-    text-decoration: none;
-}
 .viewAll {
     display: flex;
     flex-direction: column;
@@ -44,42 +40,32 @@ footer a{
 .popular-movies{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    text-align:left;
+    padding: 0px;
     margin: 10px;
+    
 }
 .film1, .film2, .film3{
-    
-    width: 14rem;
-    height: 10em;
+    width: 20rem;
+    height: 8em;
     border: 1px solid gray;
     padding: 10px;
+    border-radius: 10px;
     
 }
 
 .recommended {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
-}
-.gizli {
-    visibility: hidden;
-}
-
-
-.onerilenler{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid black;
-    padding: 10px;
+    text-align:left;
+    padding: 0px;
     margin: 10px;
 }
-
 
 
 .play-btn { 
@@ -109,29 +95,77 @@ footer a{
     color: white;
     font-size: 1.1rem;
     border: none;
+    margin-top: 10px;
 }
 .maturity-rating {
-    border: 1px solid gray;
-    color: gray;
-    font-size: 70%;
+    border: 1px solid black;
+    color: black;
+    font-size: 1rem;
 }
 
-.follow {
-    display: flex;
-    flex-direction: row;
-}
 .follow img { 
 width: 10%;
 height: 10%;
 }
-.apps {
+
+.ortala {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
 }
-.apps img { 
-margin-top: 5%;
-justify-content: center;
-align-items: center;
-width: 25%;
-height: 25%;
+
+.gizli {
+    visibility: hidden;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    flex: 1;
+    
+    
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.50;
+}
+.social-icons {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    
+
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+
+    
+}
+.apps-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    padding: 0;
+
+}
+.apps-icons { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 150px;
+    height: 150px;
 }
